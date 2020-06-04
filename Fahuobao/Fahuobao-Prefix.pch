@@ -1,0 +1,26 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "BMapKit.h"
+    #import "WeiboSDK.h"
+    #define kAppKey         @"1371936618"
+    #define kAppSecret      @"8454e7fc59fcb41c324998091a64d2ca"
+    #define kRedirectURI    @"https://api.weibo.com/oauth2/default.html"
+
+    #define kAppIDQQ        @"1101517247"
+    #define kAppKeyQQ       @"OL3jFtCf33ZZLUXT"
+
+    #define kAppIDWX        @"wx83424c6fad157a71"
+#endif
